@@ -1,0 +1,10 @@
+transformers==4.9.2
+pandas==1.1.5
+numpy==1.19.2
+fastapi==0.68.1
+aiofiles==0.7.0
+uvicorn[standard]==0.15.0
+jinja2==3.0.1
+python-multipart==0.0.5
+pytest==6.2.4
+mysql-connector-python==8.0.25

@@ -1,0 +1,23 @@
+============================= test session starts ==============================
+platform linux -- Python 3.8.8, pytest-6.2.4, py-1.10.0, pluggy-0.13.1 -- /opt/conda/bin/python
+cachedir: .pytest_cache
+rootdir: /app
+collecting ... collected 4 items
+
+tests/test_db.py::test_database PASSED                                   [ 25%]
+tests/test_model.py::test_tokenizer PASSED                               [ 50%]
+tests/test_model.py::test_model PASSED                                   [ 75%]
+tests/test_web.py::test_home PASSED                                      [100%]
+
+=============================== warnings summary ===============================
+../opt/conda/lib/python3.8/site-packages/mysql/connector/connection_cext.py:506
+../opt/conda/lib/python3.8/site-packages/mysql/connector/connection_cext.py:506
+  /opt/conda/lib/python3.8/site-packages/mysql/connector/connection_cext.py:506: DeprecationWarning: PY_SSIZE_T_CLEAN will be required for '#' formats
+    self._cmysql.query(query,
+
+../opt/conda/lib/python3.8/site-packages/starlette/templating.py:57
+  /opt/conda/lib/python3.8/site-packages/starlette/templating.py:57: DeprecationWarning: 'contextfunction' is renamed to 'pass_context', the old name will be removed in Jinja 3.1.
+    def url_for(context: dict, name: str, **path_params: typing.Any) -> str:
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+======================== 4 passed, 3 warnings in 8.91s =========================
