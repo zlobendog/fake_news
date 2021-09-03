@@ -28,6 +28,8 @@ mydb = mysql.connector.connect(
     password="f@ke_n3ws",
     database="news"
 )
+# In case DB is still unfolding
+mydb.ping(reconnect=True, attempts=10, delay=2)
 
 
 # Application definition

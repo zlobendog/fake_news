@@ -20,4 +20,4 @@ tests/test_web.py::test_home PASSED                                      [100%]
     def url_for(context: dict, name: str, **path_params: typing.Any) -> str:
 
 -- Docs: https://docs.pytest.org/en/stable/warnings.html
-======================== 4 passed, 3 warnings in 8.91s =========================
+======================== 4 passed, 3 warnings in 8.61s =========================

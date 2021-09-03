@@ -6,6 +6,8 @@ mydb = mysql.connector.connect(
     user="root",
     password="init_pwd"
   )
+# In case DB is still unfolding
+mydb.ping(reconnect=True, attempts=10, delay=2)
 cursor = mydb.cursor()
 # Creating user for initial run, otherwise does nothing
 cursor.execute("CREATE USER if not exists 'fake_news'@'%' IDENTIFIED BY 'f@ke_n3ws';")
